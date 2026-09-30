@@ -1,149 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Página creada para practicar las etiquetas de autocierre de HTML5.">
-	<title>Tarea 1.2 - Etiquetas de autocierre en HTML5.</title>
-	<link rel="stylesheet" href="styless.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página creada para practicar las etiquetas de autocierre de HTML5.">
+    <title>Tarea 1.2 - Etiquetas de autocierre en HTML5</title>
+    <link rel="stylesheet" href="styless.css">
 </head>
 <body>
+    <h1>Etiquetas de autocierre by Diego</h1>
+
+    <!-- br -->
+    <h2>&lt;br&gt;</h2>
+
+    <p>
+        La etiqueta &lt;br&gt; sirve para hacer un salto de línea dentro de un texto.
+        <br>
+        Esta frase aparece en una línea diferente gracias a &lt;br&gt;.
+    </p>
+
+    <!-- hr -->
+    <h2>&lt;hr&gt;</h2>
+
+    <p>
+        La etiqueta &lt;hr&gt; sirve para separar diferentes partes de una página mediante una línea horizontal.
+    </p>
+
+    <hr>
+
+    <p>
+        Este texto aparece después de la línea horizontal.
+    </p>
+
+    <!-- img -->
+    <h2>&lt;img&gt;</h2>
+
+    <p>
+        La etiqueta &lt;img&gt; sirve para mostrar una imagen en una página web.
+        El atributo alt proporciona un texto alternativo para describir la imagen.
+    </p>
+
+    <img src="tarea1.2.png" alt="Imagen de ejemplo">
+
+    <!-- input -->
+    <h2>&lt;input&gt;</h2>
+
+    <p>
+        La etiqueta &lt;input&gt; sirve para crear campos donde el usuario puede introducir información.
+    </p>
+
+    <input type="text" placeholder="Escribe aquí tu nombre">
+
+    <!-- link -->
+    <h2>&lt;link&gt;</h2>
+
+    <p>
+        La etiqueta &lt;link&gt; sirve para enlazar recursos externos con el documento HTML.
+        En este caso se utiliza para enlazar el archivo styles.css y aplicar estilos a la página.
+    </p>
+
+    <!-- meta -->
+    <h2>&lt;meta&gt;</h2>
+
+    <p>
+        La etiqueta &lt;meta&gt; sirve para añadir información sobre la página que no se muestra
+        directamente en ella. Se coloca dentro del &lt;head&gt;. En esta página hay tres:
+        <b>charset</b> indica la codificación de los caracteres (UTF-8, para que se vean bien las tildes y la ñ),
+        <b>viewport</b> adapta la página a diferentes tamaños de pantalla, como los móviles,
+        y <b>description</b> contiene una descripción de la página que usan los buscadores como Google.
+    </p>
+
+    <!-- col -->
     <h2>&lt;col&gt;</h2>
 
-<p>
-    La etiqueta &lt;col&gt; sirve para aplicar estilos o características a una columna de una tabla.
-    Se utiliza dentro de la etiqueta &lt;colgroup&gt;.
-</p>
+    <p>
+        La etiqueta &lt;col&gt; sirve para aplicar estilos o características a una columna de una tabla.
+        Se utiliza dentro de la etiqueta &lt;colgroup&gt;.
+    </p>
 
-<table>
-    <colgroup>
-        <col class="columna-destacada">
-        <col>
-        <col>
-    </colgroup>
+    <table>
+        <colgroup>
+            <col class="columna-destacada">
+            <col>
+            <col>
+        </colgroup>
 
-    <tr>
-        <th>Nombre</th>
-        <th>Edad</th>
-        <th>Ciudad</th>
-    </tr>
-    <tr>
-        <td>Diego</td>
-        <td>40</td>
-        <td>Elche</td>
-    </tr>
-    <tr>
-        <td>Ana</td>
-        <td>25</td>
-        <td>Alicante</td>
-    </tr>
-</table>
-<h2>&lt;embed&gt;</h2>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Ciudad</th>
+        </tr>
+        <tr>
+            <td>Diego</td>
+            <td>40</td>
+            <td>Elche</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>25</td>
+            <td>Alicante</td>
+        </tr>
+    </table>
 
-<p>
-    La etiqueta &lt;embed&gt; sirve para incrustar un archivo externo dentro de la página,
-    como una imagen SVG o un PDF. Es una etiqueta de autocierre, así que no lleva etiqueta de cierre.
-</p>
+    <!-- embed -->
+    <h2>&lt;embed&gt;</h2>
 
-<embed src="dibujo.svg" type="image/svg+xml" width="200" height="200">
-<h2>&lt;meta&gt;</h2>
+    <p>
+        La etiqueta &lt;embed&gt; sirve para incrustar un archivo externo dentro de la página,
+        como una imagen SVG o un PDF. Es una etiqueta de autocierre, así que no lleva etiqueta de cierre.
+    </p>
 
+    <embed src="dibujo.svg" type="image/svg+xml" width="200" height="200">
 
+    <!-- param -->
+    <h2>&lt;param&gt;</h2>
 
-<p>
-    La etiqueta &lt;meta&gt; sirve para añadir información sobre la página que no se muestra
-    directamente en ella. Se coloca dentro del &lt;head&gt;. En esta página hay tres:
-    <b>charset</b> indica la codificación de los caracteres (UTF-8, para que se vean bien las tildes y la ñ),
-    <b>viewport</b> adapta la página a diferentes tamaños de pantalla, como los móviles,
-    y <b>description</b> contiene una descripción de la página que usan los buscadores como Google.
-</p>
-<h2>&lt;source&gt;</h2>
+    <p>
+        La etiqueta &lt;param&gt; se usa dentro de &lt;object&gt; para pasar parámetros
+        a un contenido incrustado. Se creó para configurar plugins como Flash o los applets de Java.
+        Hoy está obsoleta: los navegadores ya no admiten esos plugins, así que ignoran &lt;param&gt;
+        y no tiene ningún efecto visible. Abajo se ve la imagen del &lt;object&gt;, pero el parámetro
+        "autoplay" no hace nada.
+    </p>
 
-<p>
-    La etiqueta &lt;source&gt; se usa dentro de &lt;video&gt; o &lt;audio&gt; para indicar
-    el archivo multimedia que se va a reproducir y su formato. El atributo controls
-    muestra los botones de reproducir, pausar y volumen.
-</p>
+    <object data="dibujo.svg" type="image/svg+xml" width="200" height="200">
+        <param name="autoplay" value="true">
+    </object>
 
-<video controls width="400">
-    <source src="video.mp4.mp4" type="video/mp4">
-    Tu navegador no puede reproducir este vídeo.
-</video>
-<h2>&lt;wbr&gt;</h2>
+    <!-- source -->
+    <h2>&lt;source&gt;</h2>
 
-<p>
-    La etiqueta &lt;wbr&gt; indica un posible punto de corte dentro de una palabra muy larga.
-    Si la palabra no cabe en la línea, el navegador la parte por ahí; si cabe, no se nota nada.
-    Para ver el efecto, estrecha la ventana del navegador.
-</p>
+    <p>
+        La etiqueta &lt;source&gt; se usa dentro de &lt;video&gt; o &lt;audio&gt; para indicar
+        el archivo multimedia que se va a reproducir y su formato. El atributo controls
+        muestra los botones de reproducir, pausar y volumen.
+    </p>
 
-<p>Sin wbr:</p>
-<p>Superextraordinariamenteinternacionalizacionalizablementeelectroencefalografista</p>
+    <video controls width="400">
+        <source src="video.mp4.mp4" type="video/mp4">
+        Tu navegador no puede reproducir este vídeo.
+    </video>
 
-<p>Con wbr:</p>
-<p>Superextra<wbr>ordinaria<wbr>mente<wbr>internacional<wbr>izacional<wbr>izable<wbr>mente<wbr>electro<wbr>encefalo<wbr>grafista</p>
-<h2>&lt;param&gt;</h2>
+    <!-- wbr -->
+    <h2>&lt;wbr&gt;</h2>
 
-<p>
-    La etiqueta &lt;param&gt; se usa dentro de &lt;object&gt; para pasar parámetros
-    a un contenido incrustado. Se creó para configurar plugins como Flash o los applets de Java.
-    Hoy está obsoleta: los navegadores ya no admiten esos plugins, así que ignoran &lt;param&gt;
-    y no tiene ningún efecto visible. Abajo se ve la imagen del &lt;object&gt;, pero el parámetro
-    "autoplay" no hace nada.
-</p>
+    <p>
+        La etiqueta &lt;wbr&gt; indica un posible punto de corte dentro de una palabra muy larga.
+        Si la palabra no cabe en la línea, el navegador la parte por ahí; si cabe, no se nota nada.
+        Para ver el efecto, estrecha la ventana del navegador.
+    </p>
 
-<object data="dibujo.svg" type="image/svg+xml" width="200" height="200">
-    <param name="autoplay" value="true">
-</object>
+    <p>Sin wbr:</p>
+    <p>Superextraordinariamenteinternacionalizacionalizablementeelectroencefalografista</p>
 
-
-
-<p>
-    
-
-    La etiqueta &lt;meta&gt; sirve para añadir información sobre la página que no se muestra directamente en ella.
-    La etiqueta charset indica la codificación de los caracteres, viewport adapta la página a diferentes tamaños de pantalla
-    y description contiene una descripción de la página.
-</p>    
-<h2>&lt;link&gt;</h2>
-
-<p>
-    La etiqueta &lt;link&gt; sirve para enlazar recursos externos con el documento HTML.
-    En este caso se utiliza para enlazar el archivo styles.css y aplicar estilos a la página.
-</p>	
-<h1>Etiquetas de autocierre by Diego</h1>
-<h2>&lt;br&gt;</h2>
-
-<p>
-    La etiqueta &lt;br&gt; sirve para hacer un salto de línea dentro de un texto.
-    <br>
-    Esta frase aparece en una línea diferente gracias a &lt;br&gt;.
-	<h2>&lt;hr&gt;</h2>
-
-<p>
-    La etiqueta &lt;hr&gt; sirve para separar diferentes partes de una página mediante una línea horizontal.
-</p>
-
-<hr>
-
-<p>
-    Este texto aparece después de la línea horizontal.
-</p>
-<h2>&lt;img&gt;</h2>
-
-<p>
-    La etiqueta &lt;img&gt; sirve para mostrar una imagen en una página web.
-    El atributo alt proporciona un texto alternativo para describir la imagen.
-</p>
-
-<img src="tarea1.2.png" alt="Imagen de ejemplo">
-<h2>&lt;input&gt;</h2>
-
-<p>
-    La etiqueta &lt;input&gt; sirve para crear campos donde el usuario puede introducir información.
-</p>
-
-<input type="text" placeholder="¿Te gustan los">
-</p>
+    <p>Con wbr:</p>
+    <p>Superextra<wbr>ordinaria<wbr>mente<wbr>internacional<wbr>izacional<wbr>izable<wbr>mente<wbr>electro<wbr>encefalo<wbr>grafista</p>
 </body>
 </html>
