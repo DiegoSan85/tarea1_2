@@ -48,7 +48,34 @@
 <embed src="dibujo.svg" type="image/svg+xml" width="200" height="200">
 <h2>&lt;meta&gt;</h2>
 
+
+
 <p>
+    La etiqueta &lt;meta&gt; sirve para añadir información sobre la página que no se muestra
+    directamente en ella. Se coloca dentro del &lt;head&gt;. En esta página hay tres:
+    <b>charset</b> indica la codificación de los caracteres (UTF-8, para que se vean bien las tildes y la ñ),
+    <b>viewport</b> adapta la página a diferentes tamaños de pantalla, como los móviles,
+    y <b>description</b> contiene una descripción de la página que usan los buscadores como Google.
+</p>
+<h2>&lt;param&gt;</h2>
+
+<p>
+    La etiqueta &lt;param&gt; se usa dentro de &lt;object&gt; para pasar parámetros
+    a un contenido incrustado. Se creó para configurar plugins como Flash o los applets de Java.
+    Hoy está obsoleta: los navegadores ya no admiten esos plugins, así que ignoran &lt;param&gt;
+    y no tiene ningún efecto visible. Abajo se ve la imagen del &lt;object&gt;, pero el parámetro
+    "autoplay" no hace nada.
+</p>
+
+<object data="dibujo.svg" type="image/svg+xml" width="200" height="200">
+    <param name="autoplay" value="true">
+</object>
+
+
+
+<p>
+    
+
     La etiqueta &lt;meta&gt; sirve para añadir información sobre la página que no se muestra directamente en ella.
     La etiqueta charset indica la codificación de los caracteres, viewport adapta la página a diferentes tamaños de pantalla
     y description contiene una descripción de la página.
