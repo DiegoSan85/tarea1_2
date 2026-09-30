@@ -14,3 +14,25 @@ h2 {
 p {
     font-size: 18px;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: #222;
+    color: white;
+}
+
+.columna-destacada {
+    background: #dbeafe;
+}
